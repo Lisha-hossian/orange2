@@ -1,128 +1,263 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import heroImage from './image/img2.jpg';
+import bgImage from './image/img3.png';
+import headImage from './image/img.png';
+import secondImage from './image/img4.png';
+import lastImage from './image/last-img.png';
+import thirdImage from './image/img5.png';
+import forthImage from './image/img6.png';
+import fifthImage from './image/img7.png';
+import sixthOImage from './image/img8.png';
+import seventhTImage from './image/img9.png';
+import eightTImage from './image/img10.png';
+import ninthFImage from './image/img11.png';
+import tenthMImage from './image/imgM16.png';
+import eleventhMImage from './image/imgM17.png';
 
 export default function Home() {
   return (
     <>
-      <header>
-        <div className='bg-white text-black'>
-          <nav className='flex items-center justify-between p-4 flex-wrap'>
-            <div>
-              <ul className='flex font-regular text-sm space-x-10 mx-4'>
-                <li className='hover:text-blue-500 hover:scale-105 transition-all hover:underline hover:decoration-red-500'>
-                  <Link href='/women'>Women</Link>
-                </li>
-                <li className='hover:text-yellow-300 hover:scale-105 transition-all hover:decoration-red-500'>
-                  <Link href='/men'>Men</Link>
-                </li>
-                <li className='hover:text-yellow-300 hover:scale-105 transition-all hover:decoration-red-500'>
-                  <Link href='/teen'>Teen</Link>
-                </li>
-                <li className='hover:text-yellow-300 hover:scale-105 transition-all hover:decoration-red-500'>
-                  <Link href='/kids'>Kids</Link>
-                </li>
-                <li className='hover:text-yellow-300 hover:scale-105 transition-all hover:decoration-red-500'>
-                  <Link href='/home'>Home</Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <span className='font-bold text-2xl text-orange-700'>Orange</span>
-            </div>
-            <div>
-              <ul className='flex font-regular text-sm space-x-10 mx-4'>
-                <li>
-                  <Link href='/seek'>Seek</Link>
-                </li>
-                <li>
-                  <Link href='/login'>Login</Link>
-                </li>
+      <main className='px-4 lg:px-0'>
+        <section className='relative'>
+          <Image className='' src={headImage} alt='' />
+          <div class='container'>
+            <div className='absolute bottom-[110px] right-[50px] '>
+              <h1 className='font-serif text-4xl font-bold mx-16 my-0 leading-3'>
+                <span className='h1-fill text-white block '>
+                  New Summer Fashion
+                </span>
+                <span className='h1-outline text-transparent decoration-white  '>
+                  2025
+                </span>
+              </h1>
 
-                <li>
-                  <Link href='/wishlist'>Wishlist</Link>
-                </li>
-                <li>
-                  <Link href='/shopping-cart'>Shopping Cart</Link>
-                </li>
-              </ul>
+              <Link
+                href='/men'
+                className='relative font-xl font-bold text-white px-8 py-20 mr-18px top-2 left-32 underline '
+              >
+                For Men
+              </Link>
+              <Link
+                href='/'
+                className='relative font-xl font-bold text-white px-8 py-20 mr-18px  top-2 left-32 underline'
+              >
+                For Women
+              </Link>
             </div>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <section className=''>
-          <div className='flex'>
-            <Image src={heroImage} alt='img2' />
           </div>
         </section>
-        <footer className='box-sizing border border-red-400 bg-slate-400'>
-          <div className='flex items-center justify-between'>
-            <h1>
-              <span className='text-xl text-orange-600 ml-6 '>Orange</span>
-            </h1>
+        <section className='flex relative py-4'>
+          <Image src={secondImage} alt='img4' />
 
-            <div className='flex font-regular text-sm  leading-8 m-4'>
-              <ul className=''>
+          <div className='flex font-semibold text-lg m-auto text-white gap-80 absolute bottom-28'>
+            <Link href='/' className='flex underline mx-12'>
+              For Elegant
+            </Link>
+            <Link href='/' className='underline'>
+              View All
+            </Link>
+          </div>
+          <div className=' py-24 lg:py-32'>
+            <div className='container lg:max-w-screen-lg px-6'>
+              <div className='flex flex-col items-center justify-center bg-[#F5F5F5] py-16 px-8 lg:px-0'>
+                <h2 className='font-medium text-4xl lg:text-5xl text-center mb-6 leading-snug'>
+                  HIGH-QUALITY WOMEN&apos;S FASHION – FROM SMART TO CASUAL
+                </h2>
+                <p className='text-base text-center mb-8 max-w-[544px]'>
+                  Join for thousands of brand new fashion. Embrace pure
+                  confidence with Orange ONE, the perfect first layer and trends
+                  with Orange. Start your journey today!
+                </p>
+                <button className=' border border-black text-white font-semibold bg-black w-80 h-14 m-auto rounded-md'>
+                  Join Now
+                </button>
+              </div>
+              <ul className='flex justify-evenly m-6 font-semibold'>
                 <li>
-                  <Link href='/help'>Help</Link>
+                  <Link href={'/women'}>SELECTION</Link>
                 </li>
                 <li>
-                  <Link href='/returns'>Returns</Link>
+                  <Link href={'/women'}>COLLECTIONS</Link>
                 </li>
                 <li>
-                  <Link href='/my-purchases'>My purchases</Link>
+                  <Link href={'/women'}>PLUS SIZES</Link>
                 </li>
                 <li>
-                  <Link href='/orange-outfits'>Orange Outfits</Link>
-                </li>
-              </ul>
-            </div>
-            <div className='flex font-regular text-sm leading-8 m-4'>
-              <ul>
-                <li>
-                  <Link href='/sustainability'>Sustainability</Link>
-                </li>
-                <li>
-                  <Link href='/club-orange'>Club Orange</Link>
-                </li>
-                <li>
-                  <Link href='/special-days'>Special Days</Link>
-                </li>
-                <li>
-                  <Link href='/shops'>Shops</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className='flex font-regular text-sm leading-8 m-4'>
-              <ul>
-                <li>
-                  <Link href='/gift-card'>Gift Card</Link>
-                </li>
-                <li>
-                  <Link href='/site-map'>Site Map</Link>
-                </li>
-                <li>
-                  <Link href='/imprint'>Imprint</Link>
-                </li>
-                <li>
-                  <Link href='/job-offers'>Job Offers</Link>
-                </li>
-              </ul>
-            </div>
-            <div className='flex font-regular text-sm leading-8 mr-6'>
-              <ul>
-                <li>
-                  <Link href='/about-us'>About Us</Link>
-                </li>
-                <li>
-                  <Link href='/contact-us'>Contact Us</Link>
+                  <Link className='text-red-500' href={'/women'}>
+                    SALE-70%
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
-        </footer>
+        </section>
+        <div className='flex items-center justify-center  my-4 py-4 w-screen h-10 bg-slate-50 text-4xl font-semibold'>
+          <ul className='flex gap-20'>
+            <li>Summer Collection 2025</li>
+            <li className=''>UP TO 35% OFF</li>
+          </ul>
+        </div>
+        <section className='my-8'>
+          <div className='flex justify-evenly'>
+            <ul className='flex gap-4 flex-wrap'>
+              <li className=''>
+                <Image
+                  className='w-[500] h-[750] ml-14'
+                  src={thirdImage}
+                  alt='img5'
+                />
+                <div className='item-details flex justify-between ml-8 mr-2 mt-2 mb-4'>
+                  <span className='fashion-item-name'>Green-Outfit</span>
+                  <span className='fashion-item-price'>€1.999,00</span>
+                </div>
+              </li>
+              <li className=''>
+                <Image
+                  className='w-[500] h-[750]'
+                  src={fifthImage}
+                  alt='img6'
+                />
+                <div className='flex justify-between mt-2 mb-4'>
+                  <span className='fashion-item-name'>Casual-Outfit</span>
+                  <span className='fashion-item-price'>€509,00</span>
+                </div>
+              </li>
+              <li className=''>
+                <Image
+                  className='w-[500] h-[750]'
+                  src={forthImage}
+                  alt='img7'
+                />
+                <div className='item-details flex justify-between mt-2 mb-4'>
+                  <li>Flower-Outfit </li>
+
+                  <li>€799,00</li>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div></div>
+        <section>
+          <div className='flex justify-evenly gap-4 my-6 flex-wrap'>
+            <Image className='w-[370] h-[518]' src={sixthOImage} alt='img8' />
+
+            <Image className='w-[370] h-[518]' src={seventhTImage} alt='img9' />
+
+            <Image className='w-[370] h-[518]' src={eightTImage} alt='img10' />
+            <Image className='w-[370] h-[518]' src={ninthFImage} alt='img11' />
+          </div>
+        </section>
+        <section>
+          <div className='flex font-semibold text-xl justify-evenly my-4 py-4'>
+            <h2>FOR NEW CASUAL LOOK COLLECTION</h2>
+
+            <Link className='flex underline items-center' href={'/men'}>
+              CLICK HERE
+            </Link>
+          </div>
+        </section>
+        <section className=''>
+          <div className='relative'>
+            <div className='flex  justify-evenly my-6'>
+              <Image className='w-[500] h-[750]' src={bgImage} alt='' />
+              <div className='flex absolute top-1/2 left-52 underline'>
+                <Link className='font-semibold' href={'/men'}>
+                  OFFICE-WEAR
+                </Link>
+              </div>
+              <div className='flex justify-evenly  bottom-40 left-52 '>
+                <Image className='w-[500] h-[750]' src={tenthMImage} alt='' />
+                <div className='flex absolute top-1/2 right-40 underline'>
+                  <Link className='font-semibold' href={'/men'}>
+                    CASUAL-WEAR
+                  </Link>
+                </div>
+              </div>
+              <div className='flex bottom-1/4 left-52'>
+                <Image
+                  className='w-[500] h-[750]'
+                  src={eleventhMImage}
+                  alt=''
+                />
+                <div className='flex absolute bottom-1/2 left-1/2 underline'>
+                  <Link className='font-semibold' href={'/men'}>
+                    SUMMER-WEAR
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className='flex font-semibold text-2xl justify-end my-4 py-4'>
+              <ul className='flex items-center'>
+                <li>MEN NEW COLLECTION </li>
+                <li>
+                  <Link className='flex items-center' href={'/men'}>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='54'
+                      height='54'
+                      viewBox='0 0 54 54'
+                      fill='none'
+                      className='flex items-center m-2'
+                    >
+                      <path
+                        fill-rule='evenodd'
+                        clip-rule='evenodd'
+                        d='M5.40002 27C5.40002 25.8816 6.30665 24.975 7.42502 24.975L41.4183 24.975L35.7471 19.7089C34.9276 18.9479 34.8801 17.6666 35.6411 16.847C36.4021 16.0275 37.6834 15.9801 38.5029 16.7411L47.9529 25.5161C48.3656 25.8992 48.6 26.4369 48.6 27C48.6 27.563 48.3656 28.1007 47.9529 28.4839L38.5029 37.2589C37.6834 38.0199 36.4021 37.9724 35.6411 37.1529C34.8801 36.3333 34.9276 35.0521 35.7471 34.2911L41.4183 29.025L7.42502 29.025C6.30665 29.025 5.40002 28.1183 5.40002 27Z'
+                        fill='black'
+                      />
+                    </svg>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div className=' flex  border border-red-600 h-12  bg-red-500 gap-2 justify-center'>
+          <ul className='flex gap-4'>
+            <li>
+              <span className='font-semibold'>SALE UP TO-70% </span>
+            </li>
+            <li>
+              <span className='text-xs'>Last reduction</span>
+            </li>
+            <li>
+              <span className='font-semibold'>BUY NOW</span>
+            </li>
+          </ul>
+        </div>
+
+        <section className='relative'>
+          <div className='flex '>
+            <Image className='rounded-lg' src={lastImage} alt='' />
+
+            <div className='hidden lg:flex container my-6 absolute right-[20] items-center border border-black-700 w-1/2 lg:w-50 h-72 bg-white font-medium'>
+              <div className=' flex '>
+                <h2
+                  className='absolute top-10
+              font-bold text-3xl m-6'
+                >
+                  Orange newsletter
+                </h2>
+                <p className='flex flex-wrap text-center leading-8'>
+                  <span className='absolute bottom-36  mx-6 mb-2'>
+                    With the Orange newsletter you are always up to date about
+                    new
+                  </span>
+                  <span className=' absolute bottom-32 left-8 mx-6'>
+                    products, exclusive specials, lifestyle and fashion trends.
+                  </span>
+                </p>
+                <div className=' absolute bottom-6 mx-6 my-4 '>
+                  <button className=' border border-black text-white font-semibold bg-black w-80 h-16 m-auto rounded-md'>
+                    Register Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
