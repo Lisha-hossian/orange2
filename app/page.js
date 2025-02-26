@@ -115,7 +115,7 @@ export default function Home() {
             <ul className='flex gap-4 flex-wrap'>
               <li className=''>
                 <Image
-                  className='w-[500] h-[750] ml-14'
+                  className='w-[500px] h-[750px] ml-14'
                   src={thirdImage}
                   alt='img5'
                 />
@@ -126,7 +126,7 @@ export default function Home() {
               </li>
               <li className=''>
                 <Image
-                  className='w-[500] h-[750]'
+                  className='w-[500px] h-[750px]'
                   src={fifthImage}
                   alt='img6'
                 />
@@ -137,7 +137,7 @@ export default function Home() {
               </li>
               <li className=''>
                 <Image
-                  className='w-[500] h-[750]'
+                  className='w-[500px] h-[750px]'
                   src={forthImage}
                   alt='img7'
                 />
