@@ -35,12 +35,14 @@ export default function Login() {
               required
             />
           </div>
-          <p>Are you not Registered yet?</p>
-          <span className='underline leading-4'>
-            <Link className='' href={'/register'}>
-              Register here
-            </Link>
-          </span>
+          <div className='flex flex-col gap-4 pb-4'>
+            <p>Are you not Registered yet?</p>
+            <span className='underline leading-4'>
+              <Link className='' href={'/register'}>
+                Register here
+              </Link>
+            </span>
+          </div>
 
           <div class='flex items-start mb-5'>
             <div class='flex items-center h-5'>

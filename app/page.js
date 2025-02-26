@@ -20,11 +20,15 @@ export default function Home() {
     <>
       <main className='px-4 lg:px-0'>
         <section className='relative'>
-          <Image className='' src={headImage} alt='' />
+          <Image
+            className='h-[400px] lg:h-[800px] object-cover object-top'
+            src={headImage}
+            alt=''
+          />
           <div class='container'>
             <div className='absolute bottom-[110px] right-[50px] '>
               <h1 className='font-serif text-4xl font-bold mx-16 my-0 leading-3'>
-                <span className='h1-fill text-white block '>
+                <span className='h1-fill text-white block leading-9 '>
                   New Summer Fashion
                 </span>
                 <span className='h1-outline text-transparent decoration-white  '>
@@ -34,62 +38,70 @@ export default function Home() {
 
               <Link
                 href='/men'
-                className='relative font-xl font-bold text-white px-8 py-20 mr-18px top-2 left-32 underline '
+                className='relative font-xl font-bold text-white px-8 py-20 mr-18px top-2 left-9 lg:left-32 hover:text-yellow-500 hover:scale-105 transition-all underline '
               >
                 For Men
               </Link>
               <Link
                 href='/'
-                className='relative font-xl font-bold text-white px-8 py-20 mr-18px  top-2 left-32 underline'
+                className='relative font-xl font-bold text-white px-8 py-20 mr-18px  top-2 left-9 lg:left-32 hover:text-yellow-500 hover:scale-105 transition-all underline'
               >
                 For Women
               </Link>
             </div>
           </div>
         </section>
-        <section className='flex relative py-4'>
-          <Image src={secondImage} alt='img4' />
+        <section className='flex flex-wrap relative py-4'>
+          <Image
+            src={secondImage}
+            alt='img4'
+            className='lg:w-5/12 object-cover object-top'
+          />
 
-          <div className='flex font-semibold text-lg m-auto text-white gap-80 absolute bottom-28'>
-            <Link href='/' className='flex underline mx-12'>
+          {/* <div className='flex font-semibold text-lg m-auto text-white gap-80 absolute bottom-28'>
+            <Link
+              href='/'
+              className='flex underline mx-12 hover:text-yellow-500 hover:scale-105 transition-all'
+            >
               For Elegant
             </Link>
-            <Link href='/' className='underline'>
+            <Link
+              href='/'
+              className='hover:text-yellow-500 hover:scale-105 transition-all underline'
+            >
               View All
             </Link>
-          </div>
-          <div className=' py-24 lg:py-32'>
-            <div className='container lg:max-w-screen-lg px-6'>
-              <div className='flex flex-col items-center justify-center bg-[#F5F5F5] py-16 px-8 lg:px-0'>
-                <h2 className='font-medium text-4xl lg:text-5xl text-center mb-6 leading-snug'>
-                  HIGH-QUALITY WOMEN&apos;S FASHION – FROM SMART TO CASUAL
-                </h2>
-                <p className='text-base text-center mb-8 max-w-[544px]'>
-                  Join for thousands of brand new fashion. Embrace pure
-                  confidence with Orange ONE, the perfect first layer and trends
-                  with Orange. Start your journey today!
-                </p>
-                <button className=' border border-black text-white font-semibold bg-black w-80 h-14 m-auto rounded-md'>
-                  Join Now
-                </button>
-              </div>
-              <ul className='flex justify-evenly m-6 font-semibold'>
-                <li>
-                  <Link href={'/women'}>SELECTION</Link>
-                </li>
-                <li>
-                  <Link href={'/women'}>COLLECTIONS</Link>
-                </li>
-                <li>
-                  <Link href={'/women'}>PLUS SIZES</Link>
-                </li>
-                <li>
-                  <Link className='text-red-500' href={'/women'}>
-                    SALE-70%
-                  </Link>
-                </li>
-              </ul>
+          </div> */}
+          <div className=' py-24 lg:py-32 lg:w-7/12'>
+            <div className='flex flex-col items-center justify-center bg-[#F5F5F5] py-16 px-8 lg:px-0'>
+              <h2 className='font-medium text-4xl lg:text-5xl text-center mb-6 leading-snug'>
+                HIGH-QUALITY WOMEN&apos;S FASHION – FROM SMART TO CASUAL
+              </h2>
+              <p className='text-base text-center mb-8 max-w-[544px]'>
+                Join for thousands of brand new fashion. Embrace pure confidence
+                with Orange ONE, the perfect first layer and trends with Orange.
+                Start your journey today!
+              </p>
+              <button className=' border border-black text-white font-semibold bg-black w-80 h-14 m-auto rounded-md hover:bg-sky-500 '>
+                Join Now
+              </button>
             </div>
+            <ul className='flex justify-evenly m-6 font-semibold'>
+              <li className='hover:underline hover:text-yellow-500 hover:scale-105 transition-all'>
+                <Link href={'/women'}>SELECTION</Link>
+              </li>
+              <li className='hover:underline hover:text-yellow-500 hover:scale-105 transition-all'>
+                <Link href={'/women'}>COLLECTIONS</Link>
+              </li>
+              <li className='hover:underline hover:text-yellow-500 hover:scale-105 transition-all'>
+                <Link href={'/women'}>PLUS SIZES</Link>
+              </li>
+              <li className='hover:underline hover:text-yellow-500 hover:scale-105 transition-all'>
+                <Link className='text-red-500' href={'/women'}>
+                  SALE-70%
+                </Link>
+              </li>
+            </ul>
           </div>
         </section>
         <div className='flex items-center justify-center  my-4 py-4 w-screen h-10 bg-slate-50 text-4xl font-semibold'>
@@ -141,12 +153,71 @@ export default function Home() {
         <div></div>
         <section>
           <div className='flex justify-evenly gap-4 my-6 flex-wrap'>
-            <Image className='w-[370] h-[518]' src={sixthOImage} alt='img8' />
+            <ul className='flex gap-2 '>
+              <li>
+                {' '}
+                <Image
+                  className='w-[370] h-[518]'
+                  src={sixthOImage}
+                  alt='img8'
+                />
+                <div className='text-center'>
+                  <Link href={'/women'}>
+                    <span className='font-bold text-xl hover:underline'>
+                      PARTY-DRESS
+                    </span>
+                  </Link>
+                </div>
+              </li>
 
-            <Image className='w-[370] h-[518]' src={seventhTImage} alt='img9' />
-
-            <Image className='w-[370] h-[518]' src={eightTImage} alt='img10' />
-            <Image className='w-[370] h-[518]' src={ninthFImage} alt='img11' />
+              <li>
+                {' '}
+                <Image
+                  className='w-[370] h-[518]'
+                  src={seventhTImage}
+                  alt='img9'
+                />
+                <div className='text-center '>
+                  <Link href={'/women'}>
+                    {' '}
+                    <span className='font-bold text-xl hover:underline'>
+                      PANT-BLAZER
+                    </span>
+                  </Link>
+                </div>
+              </li>
+              <li>
+                {' '}
+                <Image
+                  className='w-[370] h-[518]'
+                  src={eightTImage}
+                  alt='img10'
+                />
+                <div className='text-center '>
+                  <Link href={'/women'}>
+                    {' '}
+                    <span className='font-bold text-xl hover:underline'>
+                      CASUAL-DRESSES
+                    </span>
+                  </Link>
+                </div>
+              </li>
+              <li>
+                <Image
+                  className='w-[370] h-[518]'
+                  src={ninthFImage}
+                  alt='img11'
+                />
+                <div className='text-center '>
+                  <Link href={'/women'}>
+                    {' '}
+                    <span className='font-bold text-xl hover:underline'>
+                      COATS
+                    </span>
+                  </Link>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
         <section>
@@ -215,15 +286,15 @@ export default function Home() {
           </div>
         </section>
         <div className=' flex  border border-red-600 h-12  bg-red-500 gap-2 justify-center'>
-          <ul className='flex gap-4'>
+          <ul className='flex gap-4 items-center'>
             <li>
-              <span className='font-semibold'>SALE UP TO-70% </span>
+              <span className='font-semibold my-2'>SALE UP TO-70% </span>
             </li>
             <li>
-              <span className='text-xs'>Last reduction</span>
+              <span className='text-xs my-2'>Last reduction</span>
             </li>
             <li>
-              <span className='font-semibold'>BUY NOW</span>
+              <span className='font-semibold my-2'>BUY NOW</span>
             </li>
           </ul>
         </div>
@@ -250,7 +321,7 @@ export default function Home() {
                   </span>
                 </p>
                 <div className=' absolute bottom-6 mx-6 my-4 '>
-                  <button className=' border border-black text-white font-semibold bg-black w-80 h-16 m-auto rounded-md'>
+                  <button className=' border border-black text-white font-semibold bg-black w-80 h-16 m-auto rounded-md  hover:bg-sky-500'>
                     Register Now
                   </button>
                 </div>

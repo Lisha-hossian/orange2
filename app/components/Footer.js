@@ -29,32 +29,32 @@ export default function Footer() {
 
           <div className='flex flex-wrap'>
             <ul className='flex flex-col mx-24 my-12 gap-3'>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/help'>Help</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/returns'>Returns</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/my-purchases'>My purchases</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/orange-outfits'>Orange Outfits</Link>
               </li>
             </ul>
             {/* </div> */}
             {/* <div className='flex font-regular text-sm leading-8 m-4'> */}
             <ul className='flex flex-col mx-20 my-12 gap-3 '>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/sustainability'>Sustainability</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/club-orange'>Club Orange</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/special-days'>Special Days</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/shops'>Shops</Link>
               </li>
             </ul>
@@ -62,26 +62,26 @@ export default function Footer() {
 
             {/* <div className='flex font-regular text-sm leading-8 m-4'> */}
             <ul className='flex flex-col mx-20 my-12 gap-3'>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/gift-card'>Gift Card</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/site-map'>Site Map</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/imprint'>Imprint</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/job-offers'>Job Offers</Link>
               </li>
             </ul>
             {/* </div> */}
             {/* <div className='flex font-regular text-sm leading-8 mr-6'> */}
             <ul className='flex flex-col mx-20 my-12 gap-3 '>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/about-us'>About Us</Link>
               </li>
-              <li>
+              <li className='hover:text-yellow-500 hover:scale-105 transition-all '>
                 <Link href='/contact-us'>Contact Us</Link>
               </li>
             </ul>
@@ -187,10 +187,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className='flex flex-wrap'>
-        <h3 className='mx-8 mt-10'>Download on</h3>
-
-        <ul className='flex flex-row gap-4 mt-14'>
+      <div className='flex flex-wrap '>
+        <ul className='flex flex-row gap-4 mt-14 m-auto'>
+          <li className=''>Download on</li>
           <li className=''>
             <Link href={''}>
               <svg
@@ -218,7 +217,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <ul className='flex mx-16 my-14 '>
+        <ul className='flex mx-8 my-14 '>
           <li>
             <Button />
           </li>
@@ -245,7 +244,7 @@ export default function Footer() {
       </div>
       <hr />
       <div className='flex'>
-        <ul className='flex gap-4 m-auto'>
+        <ul className='flex gap-4 m-auto hover:text-yellow-500 hover:scale-105 transition-all'>
           <li>FAQ</li>
           <li>|</li>
           <li>Privacy and cookie policy</li>
