@@ -25,7 +25,7 @@ export default function Home() {
             src={headImage}
             alt=''
           />
-          <div class='container'>
+          <div className='container'>
             <div className='absolute bottom-[110px] right-[50px] '>
               <h1 className='font-serif text-4xl font-bold mx-16 my-0 leading-3'>
                 <span className='h1-fill text-white block leading-9 '>
@@ -142,9 +142,9 @@ export default function Home() {
                   alt='img7'
                 />
                 <div className='item-details flex justify-between mt-2 mb-4'>
-                  <li>Flower-Outfit </li>
+                  <span>Flower-Outfit </span>
 
-                  <li>€799,00</li>
+                  <span>€799,00</span>
                 </div>
               </li>
             </ul>
@@ -273,8 +273,8 @@ export default function Home() {
                       className='flex items-center m-2'
                     >
                       <path
-                        fill-rule='evenodd'
-                        clip-rule='evenodd'
+                        fillRule='evenodd'
+                        clipRule='evenodd'
                         d='M5.40002 27C5.40002 25.8816 6.30665 24.975 7.42502 24.975L41.4183 24.975L35.7471 19.7089C34.9276 18.9479 34.8801 17.6666 35.6411 16.847C36.4021 16.0275 37.6834 15.9801 38.5029 16.7411L47.9529 25.5161C48.3656 25.8992 48.6 26.4369 48.6 27C48.6 27.563 48.3656 28.1007 47.9529 28.4839L38.5029 37.2589C37.6834 38.0199 36.4021 37.9724 35.6411 37.1529C34.8801 36.3333 34.9276 35.0521 35.7471 34.2911L41.4183 29.025L7.42502 29.025C6.30665 29.025 5.40002 28.1183 5.40002 27Z'
                         fill='black'
                       />
