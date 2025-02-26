@@ -112,10 +112,10 @@ export default function Home() {
         </div>
         <section className='my-8'>
           <div className='flex justify-evenly'>
-            <ul className='flex gap-4 flex-wrap'>
-              <li className=''>
+            <ul className='flex gap-2 flex-col lg:flex-row'>
+              <li className='w-full lg:w-4/12'>
                 <Image
-                  className='w-[500px] h-[750px] ml-14'
+                  className='w-[500px] h-[750px]'
                   src={thirdImage}
                   alt='img5'
                 />
@@ -124,7 +124,7 @@ export default function Home() {
                   <span className='fashion-item-price'>€1.999,00</span>
                 </div>
               </li>
-              <li className=''>
+              <li className='w-full lg:w-4/12'>
                 <Image
                   className='w-[500px] h-[750px]'
                   src={fifthImage}
@@ -135,7 +135,7 @@ export default function Home() {
                   <span className='fashion-item-price'>€509,00</span>
                 </div>
               </li>
-              <li className=''>
+              <li className='w-full lg:w-4/12'>
                 <Image
                   className='w-[500px] h-[750px]'
                   src={forthImage}
@@ -154,7 +154,7 @@ export default function Home() {
         <section>
           <div className='flex justify-evenly gap-4 my-6 flex-wrap'>
             <ul className='flex gap-2 '>
-              <li>
+              <li className=''>
                 {' '}
                 <Image
                   className='w-[370] h-[518]'
